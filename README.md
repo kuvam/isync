@@ -4,6 +4,8 @@
 
 <hr />
 
+[![npm version](https://badge.fury.io/js/isync.svg)](https://badge.fury.io/js/isync)
+
 Released under the terms of the [Beerware](https://fedoraproject.org/wiki/Licensing/Beerware) license.
 
 Contact me on [Telegram](https://telegram.org/) at [@snarkie](https://t.me/snarkie).
