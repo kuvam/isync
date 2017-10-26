@@ -1,0 +1,29 @@
+{
+  "name": "isync",
+  "version": "1.0.0",
+  "description": "A straightforward, zero-dependency NodeJS module to set JavaScript objects to be automatically persisted to disk, in JSON, at intervals.",
+  "main": "isync.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuvam/isync.git"
+  },
+  "keywords": [
+    "json",
+    "file",
+    "fs",
+    "obj",
+    "object",
+    "save",
+    "load",
+    "persist",
+    "persistence",
+    "data",
+    "store"
+  ],
+  "author": "Kuvam",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/kuvam/isync/issues"
+  },
+  "homepage": "https://github.com/kuvam/isync#readme"
+}
