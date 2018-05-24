@@ -17,40 +17,40 @@ Contact me on [Telegram](https://telegram.org/) at [@snarkie](https://t.me/snark
 ## Usage
 
 1. Load isync.
-
-```javascript
-const isync = require('isync')
-```
-
+    
+    ```javascript
+    const isync = require('isync')
+    ```
+    
 2. Create an instance of isync. (If the file already exists, isync will attempt to synchronously parse it as JSON to the `data` property.)
-
-```javascript
-const store = new isync('./store.json')
-```
-
+    
+    ```javascript
+    const store = new isync('./store.json')
+    ```
+    
 3. (a) Use the `data` property as a plain-jane JavaScript object.
-
-```javascript
-store.data.x = "foo"
-store.data.y = [3, "bar", false]
-store.data.z = { baz: store.data.x + "d", _: [null] }
-```
-
+    
+    ```javascript
+    store.data.x = "foo"
+    store.data.y = [3, "bar", false]
+    store.data.z = { baz: store.data.x + "d", _: [null] }
+    ```
+    
 3. (b) Alternatively, set it to an existing object you want to persist.
-
-```javascript
-const blob = { pi: 22 / 7, e: [2, 7, 1, 8] }
-store.data = blob
-```
-
+    
+    ```javascript
+    const blob = { pi: 22 / 7, e: [2, 7, 1, 8] }
+    store.data = blob
+    ```
+    
 4. The `data` object will be automatically synced at the specified interval (defaults to 10 minutes if unspecified) while your NodeJS program is running.
-
-
+    
+    
 5. Before exiting, flush any last-minute changes manually using `flushSync()`.
-
-```javascript
-store.flushSync()
-```
+    
+    ```javascript
+    store.flushSync()
+    ```
 
 ## Details
 
