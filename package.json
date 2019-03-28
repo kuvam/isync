@@ -1,7 +1,7 @@
 {
   "name": "isync",
   "version": "1.0.5",
-  "description": "A straightforward, zero-dependency NodeJS module to set JavaScript objects to be automatically persisted to disk, in JSON, at intervals.",
+  "description": "A straightforward and zero-dependency NodeJS module to automatically persist JavaScript objects to disk at intervals, in JSON.",
   "main": "isync.js",
   "repository": {
     "type": "git",
