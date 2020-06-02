@@ -1,6 +1,6 @@
 # isync
 
-> A straightforward, zero-dependency [NodeJS](https://nodejs.org/) module to set JavaScript objects to be automatically persisted to disk, in [JSON](http://www.json.org/), at intervals.
+> A straightforward and zero-dependency [NodeJS](https://nodejs.org/) module to automatically persist JavaScript objects to disk at intervals, in [JSON](http://www.json.org/).
 
 <hr />
 
@@ -8,7 +8,7 @@
 
 Released under the terms of the [Beerware](https://fedoraproject.org/wiki/Licensing/Beerware) license.
 
-Contact me on [Telegram](https://telegram.org/) at [@snarkie](https://t.me/snarkie).
+Contact me on [Telegram](https://telegram.org/) at [@kuvam](https://t.me/kuvam).
 
 ## Installation
 
@@ -16,19 +16,19 @@ Contact me on [Telegram](https://telegram.org/) at [@snarkie](https://t.me/snark
 
 ## Usage
 
-1. Load isync.
+1\. Load isync.
 
 ```javascript
 const isync = require('isync')
 ```
 
-2. Create an instance of isync. (If the file already exists, isync will attempt to synchronously parse it as JSON to the `data` property.)
+2\. Create an instance of isync. (If the file already exists, isync will attempt to synchronously parse it as JSON to the `data` property.)
 
 ```javascript
 const store = new isync('./store.json')
 ```
 
-3. (a) Use the `data` property as a plain-jane JavaScript object.
+3\. (a) Use the `data` property as a plain-jane JavaScript object.
 
 ```javascript
 store.data.x = "foo"
@@ -36,17 +36,17 @@ store.data.y = [3, "bar", false]
 store.data.z = { baz: store.data.x + "d", _: [null] }
 ```
 
-3. (b) Alternatively, set it to an existing object you want to persist.
+3\. (b) Alternatively, set it to an existing object you want to persist.
 
 ```javascript
 const blob = { pi: 22 / 7, e: [2, 7, 1, 8] }
 store.data = blob
 ```
 
-4. The `data` object will be automatically synced at the specified interval (defaults to 10 minutes if unspecified) while your NodeJS program is running.
+4\. The `data` object will be automatically synced at the specified interval (defaults to 10 minutes if unspecified) while your NodeJS program is running.
 
 
-5. Before exiting, flush any last-minute changes manually using `flushSync()`.
+5\. Before exiting, flush any last-minute changes manually using `flushSync()`.
 
 ```javascript
 store.flushSync()
@@ -54,7 +54,7 @@ store.flushSync()
 
 ## Details
 
-1. An instance of isync is initialised with this constructor signature.
+1\. An instance of isync is initialised with this constructor signature.
 
 ```javascript
 new isync(path: String, period?: Number)
@@ -64,7 +64,7 @@ new isync(path: String, period?: Number)
 
 <hr />
 
-2. Instances expose the following properties.
+2\. Instances expose the following properties.
 
 ```javascript
 path
@@ -86,7 +86,7 @@ period
 
 <hr />
 
-3. Instances expose the following methods.
+3\. Instances expose the following methods.
 
 ```javascript
 unlink()
@@ -116,7 +116,7 @@ flush(link: Boolean)
 
 <hr />
 
-4. You can listen on `'flush'` events on an isync instance (`store` in this example) using idiomatic [NodeJS events](https://nodejs.org/api/events.html).
+4\. You can listen on `'flush'` events on an isync instance (`store` in this example) using idiomatic [NodeJS events](https://nodejs.org/api/events.html).
 
 ```javascript
 store.on('flush', callback)
@@ -126,4 +126,4 @@ store.on('flush', callback)
 
 <hr />
 
-❤️ &nbsp; June, 2017 &nbsp;–&nbsp; October, 2017.
+❤️ &nbsp; June, 2017 &nbsp;–&nbsp; March, 2019.
