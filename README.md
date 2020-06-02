@@ -4,7 +4,7 @@
 
 <hr />
 
-[![npm version](https://badge.fury.io/js/isync.svg)](https://badge.fury.io/js/isync)
+[![npm version](https://badge.fury.io/js/isync.svg)](https://badge.fury.io/js/isync) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=kuv_isync&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=kuv_isync)
 
 Released under the terms of the [Beerware](https://fedoraproject.org/wiki/Licensing/Beerware) license.
 
