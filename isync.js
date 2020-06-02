@@ -7,7 +7,7 @@ const
 class instance extends emitter {
     constructor (path, period = 10) {
         super();
-        
+
         this.path = path;
         this.period = period;
 
@@ -21,8 +21,9 @@ class instance extends emitter {
     flush (link) {
         fs.writeFile(this.path, JSON.stringify(this.data), null, () => {
             this.emit('flush');
-            if (link)
+            if (link) {
                 this.link();
+            }
         });
     }
 
